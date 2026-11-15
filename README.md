@@ -459,7 +459,7 @@ Du hast folgende organisatorischen Regeln übermittelt:
 
 Das sind deine Angaben, keine von mir unabhängig geprüften Schulregeln. Halte dich an die offiziellen Ansagen deiner Lehrkraft. Weil KI im Test ausdrücklich verboten ist, ist die sichere Grenze: **Diese Unterlage heute zum Lernen nutzen; morgen keine KI verwenden und diese KI-generierte Unterlage nur dann während des Tests verwenden, wenn die Lehrkraft das ausdrücklich erlaubt.**
 
-## References
+<!-- References -->
 
 [1]: https://htl.dev/md/4AHIF/26-27%20-%204AHIF%20-%20WS.md "4AHIF Kursplan"
 [2]: https://htl.dev/md/presentations/Quarkus/REST.md "REST"
@@ -469,3 +469,17 @@ Das sind deine Angaben, keine von mir unabhängig geprüften Schulregeln. Halte 
 [6]: https://htl.dev/md/presentations/Quarkus/Quarkus%20-%20Testing%20with%20JUnit%20and%20REST%20Assured.md "Quarkus Testing with JUnit and REST Assured"
 [7]: https://htl.dev/md/exercises/WMC/EX%20-%20Quarkus%20-%20First%20REST%20Service%201.md "First REST Service 1"
 [8]: https://htl.dev/md/exercises/WMC/EX%20-%20Quarkus%20-%20First%20REST%20Service%202.md "First REST Service 2"
+
+
+## Weitere Infos
+für 1. 
+ A1.1 ./mvnw quarkus:dev startet, GET /films liefert die Demodaten
+(Beispielaufruf in docs/curl-beispiele.txt).
+ A1.2 Ein Film mit leerem Titel, Dauer 0 und Altersfreigabe 21 wird mit
+400 abgelehnt.
+ A1.3 Mit STORAGE = FILE legt ein zweiter Start keine Demodaten
+dazu (belegt in docs/curl-beispiele.txt).
+
+das sind 3 tests
+beim ersten testes du ob GET /films deine demo daten aus DemoData (in service package) richtig liefert.
+beim zeiten machst du dann einen test mit leerem Titel dauer 0 und age rating 21 und schaust ob er 400 liefert.
